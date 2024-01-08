@@ -31,10 +31,10 @@ In kleine viewports worden de tabs soms te lang, dan kan de gebruiker de taal ki
 ### Checklist sectie voor Definition of Done
 
 Een nieuwe sectie die ook in het tab component voorkomt
-In de nieuwe sectie wordt een spotlight getoond met de huidige status van het component en een status component als accordion waar elke status zichtbaar wordt https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---
-Schetsboek?type=design&node-id=1765-1993&mode=design&t=065l0gWPpfXxPgXJ-4
+In de nieuwe sectie wordt een spotlight getoond met de huidige status van het component en een status component als accordion waar elke status zichtbaar wordt. 
 Voor dit component kun je zelf het design bepalen of overleggen met de designer van het kernteam Jeffrey of van gemeente Utrecht René en Jeroen. Robbert en Yolijn van Frameless kunnen jullie aan elkaar voorstellen.
 
+- [Voorbeeld van het component op desktop en mobiel](https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&node-id=1765-1993&mode=design&t=065l0gWPpfXxPgXJ-4)
 - [De Definition of Done per status](https://www.figma.com/file/sq4IhUI8iml49FvhZHI83e/Untitled?type=design&node-id=1-2&mode=design&t=zNq33S1j8xBMYKnx-4)
 
 ### Sidebar
