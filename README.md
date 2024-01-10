@@ -9,7 +9,7 @@ Slack: @Yolijn
 
 &
 
-Naam: Robert Broersma
+Naam: Robbert Broersma
 
 Email adres: robbert.broersma@ictu.nl
 
