@@ -26,7 +26,7 @@ Slack: @Robbert
 
 ## Wie is de opdrachtgever ?
 
-De opdrachtgevers zijn Yolijn van der Kolk en Robert Broersma van het bedrijf Frameless.
+De opdrachtgevers zijn Yolijn van der Kolk en Robbert Broersma van het bedrijf Frameless.
 
 ## Wat zijn de unique selling points ?
 
