@@ -1,0 +1,852 @@
+/* main styling */
+:root {
+  /* kleuren */
+  /* --violet: #AF91FF;
+  --pink: #E287B0;
+  --red: #F7464E;
+  --orange: #FF7A2A;
+  --yellow: #F9D100;
+  --green: #20BC4B;
+  --sea-green: #05B7A0;
+  --blue: #008DE4; */
+  --gray: #98A4B6;
+  --secondary: #ffffff;
+  --primary: #000000;
+  /* h1  */
+  --heading-1-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
+  --heading-1-font-size: 1.5rem;
+  --heading-1-font-weight: 700;
+  --heading-1-line-height: 1.25;
+  /* paragraaf */
+  --paragraaf-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
+  --paragraaf-font-size: 1em;
+  --paragraaf-font-weight: 300;
+  --paragraaf-font-line-height: 1.5;
+}
+
+/* import icon magnifying glass */
+@import "compass/css3";
+
+/* styling for all of the browser removing the margin and padding*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* removing white space around browser */
+html, body {
+  overflow-x: hidden;
+}
+
+/* mobile*/
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 50em) {
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.1em solid var(--primary);
+  padding: 0em 1em 1em 0em;
+  margin: 0.4em 0em 0em -4em;
+}
+
+nav > a {
+  display: none;
+}
+
+.fa {
+  display: none;
+}
+
+/* Logo */
+
+/* h2 styling */
+nav h2 {
+  font-size: medium;
+  margin-top: 0.3em;
+}
+
+/* h3 styling */
+nav h3 {
+  /* Add your styles for h3 here */
+}
+
+/* zoekbalk icon */
+nav .ico-mglass {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  border-radius: 2em;
+  height: 1em;
+  width: 1em;
+  top: 0.4em;
+  border: 2px solid var(--primary);
+}
+
+/* Icon after styling */
+nav .ico-mglass:after {
+  content: "";
+  height: 0.1em;
+  width: 0.5em;
+  background: var(--primary);
+  position: absolute;
+  top: 0.9em;
+  left: 0.6em;
+  transform: rotate(45deg);
+}
+
+  
+
+ 
+
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 0.4em solid transparent;
+    border-right: 0.5em solid #555;
+    border-bottom: 0.4em solid transparent;
+    margin: 1em 0em 0em 0.5em;
+
+    & .triangle-text {
+      position: relative;
+      top: -2.7em;
+      left: 0.4em;
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      color: var(--primary);
+    }
+}
+
+    h1  {
+      font-family: var(--heading-1-font-family);
+      font-size: var(--heading-1-font-size);
+      font-weight: var(--heading-1-font-weight);
+      line-height: var(--heading-1-line-height);
+      margin: 2em 0 0 0.6em;
+      color: var(--primary);
+      
+    }
+  
+    .highlight {
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      color: var(--secondary);
+      background-color: var(--primary);
+      width: 6em;
+      text-align: center;
+      margin: 2em 0 0 0.6em;
+    }
+
+    .context {
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      margin: 2em 0 0 0.6em;
+      justify-content: right;
+    }
+
+    p {
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      margin: 2em 0 0 0.6em;
+      
+    }
+
+    /* pijl uitklap links */
+    .arrow {
+      border: solid var(--primary);
+      border-width: 0 0.20em 0.20em 0;
+      display: inline-block;
+      padding: 0.20em;
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      margin: 2em 0 0 0.6em;
+      cursor: pointer;
+    }
+
+    .arrow-text {
+      position: relative;
+      top: -3em;
+      left: 1.3em;
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+    }
+    
+    .line {
+      border-top: 0.2em solid var(--primary);
+      width: 55em;
+      height: 1em;
+      rotate: 90deg;
+      position: relative;
+      top: 26em;
+      right: 27em;
+    }
+
+
+    .bar-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      position: relative;
+      left: 2.5em;
+      top: 1em;
+      transition-duration: 10s;
+    }
+
+    .bar-links > a {
+      color: var(--primary);
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+    }
+
+
+    .sub-link {
+      position: relative;
+      left: 1em;
+    }
+
+    .up {
+      transform: rotate(225deg);
+      -webkit-transform: rotate(225deg);
+      margin: 2em 0 0 0.6em;
+      cursor: pointer;
+    }
+
+    /* INTERACTION */
+    .hidden {
+      display: none;
+    }
+
+   /* DESKTOP ELEMENTS HIDDEN FOR MOBILE */
+    aside,
+    .side-line,
+    article > a,
+    .slash,
+    article > h1,
+    .tab, 
+    .black-section, 
+    .npm,
+    table,
+    article > h2,
+    .tabcontent,
+    .design-tokens,
+    .kleur,
+    .toepassen,
+    .do-and-donts,
+    .icons,
+    .formats,
+    .combinations,
+    .position,
+    nav > .fa-github,
+    .behavior,
+    .variations,
+    .diffrence-content,
+    .accessibility,
+    .copy,
+    .security,
+    .privacy,
+    .extra-info,
+    .relay,
+    .changelog,
+    .links,
+    .insight,
+    .tip,
+    .attention,
+    hr,
+    .help,
+    .vragen {
+      display: none;
+    }
+
+    .side-line,
+    .tabcontent,
+    .fa-external-link {
+      visibility: hidden;
+    }
+    
+
+    /* footer */
+    footer {
+      border-top: 0.1em solid var(--primary);
+      margin-top: 9em;
+    }
+
+    .footer-content {
+      margin-top: 1.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .footer-content > a {
+      color: var(--primary);
+      color: var(--primary);
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      margin-left: 1em;
+      text-decoration: none;
+    }
+
+    .seperate-link {
+      color: var(--primary);
+    }
+
+    .triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 0.4em solid transparent;
+      border-right: 0.4em solid transparent;
+      border-top: 0.4em solid var(--gray);
+      position: relative;
+      bottom: 2em;
+      left: 7em;
+    }
+  }
+
+
+
+
+  /* DESKTOP */
+
+    @media screen and (min-width: 75em) {
+      /* body {
+        display: flex; 
+        flex-direction: column;
+        border: 1em solid var(--red);
+      } */
+    
+      main {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "nav nav nav"
+        "aside article section";
+      }
+
+      /* NAV */
+      nav {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 0.1em solid var(--primary);
+        padding: 1em;
+        
+      }
+
+      nav > a {
+        margin: 1em -2em 0em 3em;
+        text-decoration: none;
+        color: var(--primary);
+      }
+
+      nav > a:hover {
+        border-bottom: 0.2em solid var(--primary);
+      }
+
+     .fa {
+        margin: 0.5em 2em 0em auto;
+      }
+
+      .fa-github {
+        margin-top: 1em;
+      }
+     
+      /* LOGO */
+      .circle {
+        border-radius: 50%;
+        background-color: var(--primary);
+        width: 3em;
+        height: 3em;
+      }
+    
+      /* h2 styling */
+      nav h2 {
+        font-size: medium;
+        margin: 1em 0em 0em 1em;
+      }
+    
+      /* h3 styling */
+      nav h3, .hidden {
+        display: none;
+      }
+    
+      /* zoekbalk icon */
+      nav .ico-mglass {
+        position: relative;
+        display: inline-block;
+        background: var(--secondary);
+        border-radius: 2em;
+        height: 1em;
+        width: 1em;
+        top: 0.8em;
+        border: 2px solid var(--primary);
+      }
+    
+      /* Icon after styling */
+      nav .ico-mglass:after {
+        content: "";
+        height: 0.1em;
+        width: 0.5em;
+        background: var(--primary);
+        position: absolute;
+        top: 1em;
+        left: 0.6em;
+        transform: rotate(45deg);
+      }
+
+      /* sidebar */
+      aside {
+        border-right: 0.1em solid var(--primary);
+      }
+
+      .side-line {
+        border-left: 0.1em solid var(--primary);
+        margin: 1em 0em 1em 1em;
+        padding-left: 0.5em;
+      }
+      
+      .side-link {
+        text-decoration: none;
+        color: var(--primary);
+        margin: 0em 0em 0em 1em;
+      }
+
+      .sidebar-triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+        border-top: 0.4em solid var(--primary);
+        position: relative;
+        bottom: 0.5em;
+        left: 13em;
+      }
+    
+     
+
+      .arrow-left {
+        content: "\2190";
+
+      }
+
+      .arrow-right {
+        content: "\2192";
+      }
+
+      .sidebar-text {
+        position: absolute;
+        top: 6.1em;
+        left: 3em;
+      }
+
+      .sidebar-text2 {
+        position: absolute;
+        top: 6.1em;
+        left: 3em;
+      }
+
+      article {
+              margin-left: 1em;
+            }
+
+      article > a {
+        display: inline-block;
+        padding: 1em 1em 1em 0em;
+        text-decoration: underline;
+        color: var(--primary);
+        
+      }
+
+      .slash {
+          content: "\002F";
+          margin: 0em 0.5em 0em -0.5em;
+      }
+
+      h1  {
+        font-family: var(--heading-1-font-family);
+        font-size: var(--heading-1-font-size);
+        font-weight: var(--heading-1-font-weight);
+        line-height: var(--heading-1-line-height);
+        margin-top: 2em;
+        color: var(--primary);
+        
+      }
+    
+      .triangle-text {
+        display: none;
+      }
+
+      .highlight {
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+        color: var(--secondary);
+        background-color: var(--primary);
+        width: 6em;
+        text-align: center;
+        margin-top: 2em;
+      }
+
+      .context {
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+        margin-top: 2em;
+        justify-content: right;
+      }
+  
+      article > p {
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+        margin-top: 2em;
+      }
+
+
+      /* Tab sectie */
+      .tab {
+        overflow: hidden;
+        border-bottom: 0.1em solid var(--primary);
+        margin-bottom: 1em;
+      }
+
+
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 1em 1em;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      .tab button:hover {
+        border-bottom: 0.1em solid black;
+      }
+
+      .tab button.active {
+      border-bottom: 0.1em solid black;
+      }
+
+      .tabcontent {
+        padding: 0.2em 0em;
+        border: 0.1em solid var(--primary);
+        height: 15.7em;
+        display: none;
+      }
+
+      .tabcontent > p, h3 {
+        padding-left: 0.2em;
+      }
+
+      .black-section {
+        background-color: var(--primary);
+        position: relative;
+        margin-top: 6.7em;
+        height: 5em;
+        color: var(--secondary);
+        padding: 1em;
+      }
+
+      .black-section > a {
+        padding-left: 70em;
+        
+        color: var(--secondary);
+      }
+
+
+      .npm {
+        background-color: var(--gray);
+        padding: 1em;
+      }
+
+      .npm > a {
+        color: var(--primary);
+        padding-left: 59em;
+      }
+
+      .fa-external-link {
+        margin-top: 1em;
+      }
+
+      .fa-external-link > a {
+        color: var(--primary);
+        padding-left: 0.5em;
+      }
+
+      article > h2 {
+        margin-top: 1em;
+      }
+
+      /* table */
+      table {
+        margin-top: 1em;
+        width: 100%;
+      }
+
+      th, td {
+        border-bottom: 0.1em solid var(--primary);
+      }
+
+      th, td {
+       padding: 0.2em;
+      }
+
+      p > a {
+        color: var(--primary);
+      }
+
+      /* DESIGN TOKEN BUTTON */
+      button {
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 0.3em;
+      }
+
+      .code {
+        background-color: var(--primary);
+        height: 10em;
+        color: var(--secondary);
+        padding: 1em;
+      }
+
+      .toepassen > h2, h3, h4 {
+        margin-top: 1em;
+      }
+
+      .toepassen > h4 {
+        margin-bottom: 1em;
+      }
+
+      li > a {
+        color: var(--primary);
+      }
+
+      /* WEL & NIET */
+      .do-and-donts {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+      }
+
+      .cards {
+        margin-top: 1em;
+        width: 100%;
+        height: 30em;
+        border: 0.2em solid var(--primary);
+      }
+
+      .card-text {
+        width: 100%;
+        height: 7.6em;
+        border-top: 0.2em solid var(--primary);
+        padding-left: 1em;
+      }
+
+      .fa-thumbs-o-up {
+        margin: 1em 0em 1em 0em;
+      } 
+
+      .fa-thumbs-o-down {
+        margin: 1em 0em 1em 0em;
+      }
+
+      .card-text > p {
+        margin: 0em 0em 1em 0em;
+      }
+
+      .cards > img {
+        width: 50%;
+        object-fit: cover;
+      }
+
+      /* POSITIE */
+      .position-box {
+        border: 0.1em solid var(--primary);
+        margin-top: 1em;
+        height: 50%;
+      }
+
+      .position-img > img {
+        width: 100%;
+        height: 15em;
+      }
+
+      .position-text {
+        border-top: 0.1em solid var(--primary);
+        padding: 1em;
+      }
+
+
+      /* GEDRAG */
+      .behavior-img{
+        border: 0.1em solid var(--primary);
+        margin-top: 1em;
+      }
+
+      .behavior-img > img {
+        width: 100%;
+        height: 20em;
+      }
+
+      .behavior > ol {
+        margin: 1em 0em 0em 1em;
+      }
+
+      /* AANVULLENDE INFORMATIE */
+      .extra-info > p{
+        margin-bottom: 1em;
+      }
+
+      /* ESTAFETTE STATUS */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .estafette {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 1em 0em 0em 1em;
+        z-index: 0;
+      }
+      
+      .estafette-line {
+        border-left: 0.2em solid black;
+        height: auto;
+      }
+      
+      .estafette-circle {
+        border-radius: 50%;
+        background: black;
+        width: 2em;
+        height: 2em;
+        color: white;
+        position: sticky;
+        margin-left: -1em;
+        text-align: center;
+        padding: 0.5em;
+      }
+      
+      .estafette-text {
+        position: relative;
+        margin-left: 2em;
+        margin-top: -2em;
+      }
+      
+      .estafette-line-dashed {
+        border-left: 0.2em dashed black;
+        height: 10em;
+      }
+
+      .fa-chevron-down {
+        margin-left: 1em;
+      }
+
+      .label {
+        margin: 1em 0em 0em 2em;
+      }
+
+      /* sidebar right  */
+
+      .arrow-text {
+        margin: 1em 0em 0em 2.5em;
+      }
+      .bar-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        position: relative;
+        left: 2.5em;
+        top: 1em;
+        transition-duration: 10s;
+      }
+  
+      .bar-links > a {
+        color: var(--primary);
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+      }
+  
+  
+      .sub-link {
+        position: relative;
+        left: 1em;
+      }
+
+      /* Changelog */
+      .changelog {
+        margin: 0.5em 0em 0em 2em;
+        padding-top: 1em;
+      }
+
+      /* Links */
+      .links {
+        margin: 0.5em 0em 0em 2em;
+        padding-top: 1em;
+      }
+
+      /* INZICHT */
+      .insight {
+        border: 0.1em solid var(--primary);
+        margin-top: 2em;
+        padding: 1em;
+      }
+
+      /* TIPS */
+      .tip {
+        border: 0.1em solid var(--primary);
+        margin-top: 2em;
+        padding: 1em;
+      }
+
+      /* ATTENTIE */
+      .attention {
+        border: 0.1em solid var(--primary);
+        margin-top: 2em;
+        padding: 1em;
+      }
+
+      hr {
+        margin-top: 2em;
+      }
+
+      footer {
+        display: none;
+      }
+      
+    }
+
